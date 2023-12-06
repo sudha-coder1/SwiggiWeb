@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mulish"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container header py-3 shadow-sm bg-white">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-1 align-items-center">
+            <img src="./assets/logo_web.png" height="40px" alt="logo" />
+          </div>
+          <div class="col-3 d-flex align-items-center">
+            <div>
+              <i
+                class="bi bi-geo-alt-fill me-2 bg-light rounded-pill p-2 icofont-size"
+              ></i>
+            </div>
+            <div>
+              <p class="text-muted mb-0 small">Select Location</p>
+            </div>
+          </div>
+          <div class="col-8 d-flex align-items-center justify-content-end">
+            <div class="d-flex align-items-center mr-4">
+              <i class="bi bi-search h6 mr-2"></i>
+              <span>Search</span>
+            </div>
+
+            <div
+              style="
+                background-color: #e23744;
+                color: white;
+                border-radius: 5px;
+              "
+              class="d-flex align-items-center mr-4 px-3"
+            >
+              <i class="bi bi-0-circle h6 mr-2"></i>
+              <span>Offers</span>
+            </div>
+
+            <div class="d-flex align-items-center mr-4">
+              <i class="bi bi-person h6 mr-2"></i>
+              <span>Sign in</span>
+            </div>
+
+            <div class="d-flex align-items-center mr-4">
+              <img src="assets/profile.jpg" class="profile-icon" />
+              "Hi Oshana"
+            </div>
+
+            <div class="d-flex align-items-center mr-4">
+              <i class="bi bi-cart h6 mr-2"></i>
+              <span>Check out</span>
+            </div>
+
+            <div class="d-flex align-items-center mr-4">
+              <i class="bi bi-list h10 mr-2"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container slider py-6 shadow-sm">
+      <div class="row d-flex align-items-center"> -->
+
+    <div class="container py-3 popular align-items-center">
+      <div class="row">
+        <div class="container food-carousel-container">
+          <div class="food-carousel-slide">
+            <div class="food-carousel-list">
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top mx-auto"
+                      src="assets/food-slider/Breakfast.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Breakfast</p>
+                  </div>
+
+                  <!-- <div class="p-3 position-relative bg-white">
+                    <div class="card-body">
+                    
+                      
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Burger.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Burger</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Coffee.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Coffee</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/ColaCan.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Colacan</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Fries.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Fries</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Pizza.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Pizza</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Salad.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Salad</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Sandwich.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Sandwich</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Steak.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Steak</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Burger.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Burger</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Coffee.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Coffee</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/ColaCan.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Colacan</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Fries.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Fries</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative px-1 py-3"
+                style="width: 142px"
+              >
+                <div class="carousel-food-card bg-white rounded p-2 shadow-sm">
+                  <div class="list-card-image">
+                    <img
+                      class="food-img-top"
+                      src="assets/food-slider/Pizza.png"
+                      alt="Card image cap"
+                    />
+                    <p class="m-0 small">Pizza</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="food-prev-btn">&#10094;</button>
+              <button class="food-next-btn">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bg-white">
+        <div class="container offer-carousel-container">
+          <div class="offer-carousel-slide">
+            <div class="offer-carousel-list">
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative col-3 px-1 py-3"
+              >
+                <div class="carousel-offer-card">
+                  <img
+                    class="offer_card-img-top"
+                    src="assets/Restaurant/offer.jpg"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative col-3 px-1 py-3"
+              >
+                <div class="carousel-offer-card">
+                  <img
+                    class="offer_card-img-top"
+                    src="assets/Restaurant/explore.jpg"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative col-3 px-1 py-3"
+              >
+                <div class="carousel-offer-card">
+                  <img
+                    class="offer_card-img-top"
+                    src="assets/Restaurant/discover.jpg"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative col-3 px-1 py-3"
+              >
+                <div class="carousel-offer-card">
+                  <img
+                    class="offer_card-img-top"
+                    src="assets/Restaurant/trynow.jpg"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="list-card h-100 rounded overflow-hidden position-relative col-3 px-1 py-3"
+              >
+                <div class="carousel-offer-card">
+                  <img
+                    class="offer_card-img-top"
+                    src="assets/Restaurant/discover_2.jpg"
+                  />
+                </div>
+              </div>
+
+              <button class="prev-btn">&#10094;</button>
+              <button class="next-btn">&#10095;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-3 pb-2 align-items-center">
+          <h5 class="m-0 title">Trending this week</h5>
+        </div>
+        <div class="col-9 d-flex align-items-center justify-content-end">
+          <span class="red-text">View all</span>
+          <i class="bi bi-chevron-double-right red-text"></i>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <div
+              class="list-card h-100 rounded overflow-hidden position-relative col-4 p-0"
+            >
+              <div class="carousel-slide-card">
+                <div class="list-card-image">
+                  <div class="promotion position-absolute">
+                    <span class="badge bg-dark">Promoted</span>
+                  </div>
+
+                  <div class="star position-absolute">
+                    <span class="badge bg-success p-2">
+                      <i class="bi bi-star"></i> 4.1 (400+)
+                    </span>
+                  </div>
+
+                  <div
+                    class="favourite-heart text-danger position-absolute rounded-circle"
+                  >
+                    <span>
+                      <i class="bi bi-heart"></i>
+                    </span>
+                  </div>
+
+                  <img
+                    class="card-img-top"
+                    src="assets/Restaurant/thai_2.png"
+                    alt="Card image cap"
+                  />
+                </div>
+
+                <div class="p-3 position-relative bg-white">
+                  <div class="card-body">
+                    <div>
+                      <h6 class="mb-1 sale-title">The Osahan Restaurant</h6>
+                      <p class="text-gray mb-3" style="font-size: 12px">
+                        North • Hamburgers • Pure veg
+                      </p>
+                      <p class="text-gray mb-3 time">
+                        <span class="bg-light text-dark rounded-sm py-1 px-2">
+                          <i class="bi bi-clock"></i> 15–25 min
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <span class="badge bg-danger" style="font-size: 10px"
+                        >OFFER</span
+                      >
+                      <small>65% OSAHAN50</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="list-card h-100 rounded overflow-hidden position-relative col-4 p-0"
+            >
+              <div class="carousel-slide-card">
+                <div class="list-card-image">
+                  <div class="promotion position-absolute">
+                    <span class="badge bg-dark">Promoted</span>
+                  </div>
+
+                  <div class="star position-absolute">
+                    <span class="badge bg-success p-2">
+                      <i class="bi bi-star"></i> 3.1 (400+)
+                    </span>
+                  </div>
+
+                  <div
+                    class="favourite-heart text-danger position-absolute rounded-circle"
+                  >
+                    <span>
+                      <i class="bi bi-heart"></i>
+                    </span>
+                  </div>
+
+                  <img
+                    class="card-img-top"
+                    src="assets/Restaurant/osahan-2.png"
+                    alt="Card image cap"
+                  />
+                </div>
+
+                <div class="p-3 position-relative bg-white">
+                  <div class="card-body">
+                    <div>
+                      <h6 class="mb-1 sale-title">Thai Famous Cuisine</h6>
+                      <p class="text-gray mb-3" style="font-size: 12px">
+                        • North Indian • Pure veg
+                      </p>
+                      <p class="text-gray mb-3 time">
+                        <span class="bg-light text-dark rounded-sm py-1 px-2">
+                          <i class="bi bi-clock"></i> 20–30 min
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <span class="badge bg-danger" style="font-size: 10px"
+                        >OFFER</span
+                      >
+                      <small>65% Off</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="list-card h-100 rounded overflow-hidden position-relative col-4 p-0"
+            >
+              <div class="carousel-slide-card">
+                <div class="list-card-image">
+                  <div class="promotion position-absolute">
+                    <span class="badge bg-dark">Promoted</span>
+                  </div>
+
+                  <div class="star position-absolute">
+                    <span class="badge bg-success p-2">
+                      <i class="bi bi-star"></i> 4.1 (400+)
+                    </span>
+                  </div>
+
+                  <div
+                    class="favourite-heart text-danger position-absolute rounded-circle"
+                  >
+                    <span>
+                      <i class="bi bi-heart"></i>
+                    </span>
+                  </div>
+
+                  <img
+                    class="card-img-top"
+                    src="assets/Restaurant/trending1.png"
+                    alt="Card image cap"
+                  />
+                </div>
+
+                <div class="p-3 position-relative bg-white">
+                  <div class="card-body">
+                    <div>
+                      <h6 class="mb-1 sale-title">Dave's Bar-B-Que</h6>
+                      <p class="text-gray mb-3" style="font-size: 12px">
+                        Vegetarian • Indian • Pure veg
+                      </p>
+                      <p class="text-gray mb-3 time">
+                        <span class="bg-light text-dark rounded-sm py-1 px-2">
+                          <i class="bi bi-clock"></i> 15–25 min
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <span class="badge bg-success" style="font-size: 10px"
+                        >OFFER</span
+                      >
+                      <small>65% Bar-B50</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="list-card h-100 rounded overflow-hidden position-relative col-4 p-0"
+            >
+              <div class="carousel-slide-card">
+                <div class="list-card-image">
+                  <div class="promotion position-absolute">
+                    <span class="badge bg-dark">Promoted</span>
+                  </div>
+
+                  <div class="star position-absolute">
+                    <span class="badge bg-success p-2">
+                      <i class="bi bi-star"></i> 4.1 (400+)
+                    </span>
+                  </div>
+
+                  <div
+                    class="favourite-heart text-danger position-absolute rounded-circle"
+                  >
+                    <span>
+                      <i class="bi bi-heart"></i>
+                    </span>
+                  </div>
+
+                  <img
+                    class="card-img-top"
+                    src="assets/Restaurant/thai_2.png"
+                    alt="Card image cap"
+                  />
+                </div>
+
+                <div class="p-3 position-relative bg-white">
+                  <div class="card-body">
+                    <div>
+                      <h6 class="mb-1 sale-title">The Osahan Restaurant</h6>
+                      <p class="text-gray mb-3" style="font-size: 12px">
+                        North • Hamburgers • Pure veg
+                      </p>
+                      <p class="text-gray mb-3 time">
+                        <span class="bg-light text-dark rounded-sm py-1 px-2">
+                          <i class="bi bi-clock"></i> 15–25 min
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <span class="badge bg-danger" style="font-size: 10px"
+                        >OFFER</span
+                      >
+                      <small>65% OSAHAN50</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="list-card h-100 rounded overflow-hidden position-relative col-4 p-0"
+            >
+              <div class="carousel-slide-card">
+                <div class="list-card-image">
+                  <div class="promotion position-absolute">
+                    <span class="badge bg-dark">Promoted</span>
+                  </div>
+
+                  <div class="star position-absolute">
+                    <span class="badge bg-success p-2">
+                      <i class="bi bi-star"></i> 4.1 (400+)
+                    </span>
+                  </div>
+
+                  <div
+                    class="favourite-heart text-danger position-absolute rounded-circle"
+                  >
+                    <span>
+                      <i class="bi bi-heart"></i>
+                    </span>
+                  </div>
+
+                  <img
+                    class="card-img-top"
+                    src="assets/Restaurant/thai_2.png"
+                    alt="Card image cap"
+                  />
+                </div>
+
+                <div class="p-3 position-relative bg-white">
+                  <div class="card-body">
+                    <div>
+                      <h6 class="mb-1 sale-title">The Osahan Restaurant</h6>
+                      <p class="text-gray mb-3" style="font-size: 12px">
+                        North • Hamburgers • Pure veg
+                      </p>
+                      <p class="text-gray mb-3 time">
+                        <span class="bg-light text-dark rounded-sm py-1 px-2">
+                          <i class="bi bi-clock"></i> 15–25 min
+                        </span>
+                      </p>
+                    </div>
+                    <div>
+                      <span class="badge bg-danger" style="font-size: 10px"
+                        >OFFER</span
+                      >
+                      <small>65% OSAHAN50</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="prev-btn">&#10094;</button>
+          <button class="next-btn">&#10095;</button>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-2 py-3 align-items-center">
+          <h5 class="m-0 title">Most Popular</h5>
+        </div>
+        <div class="col-10 d-flex align-items-center justify-content-end">
+          <span class="red-text">26 Places</span>
+          <i class="bi bi-chevron-double-right red-text"></i>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-3 d-flex p-3 align-items-center">
+          <div
+            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm"
+          >
+            <div class="list-card-image">
+              <div class="star position-absolute">
+                <span class="badge bg-success p-2">
+                  <i class="bi bi-star"></i> 4.1 (400+)
+                </span>
+              </div>
+              <div
+                class="favourite-heart text-danger position-absolute rounded-circle"
+              >
+                <span>
+                  <i class="bi bi-heart"></i>
+                </span>
+              </div>
+              <div class="promotion position-absolute">
+                <span class="badge bg-dark">Promoted</span>
+              </div>
+              <img
+                src="assets/Restaurant/Oshaan.png"
+                width="100%"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body p-3 position-relative">
+              <h6 class="card-title">The osahan Restaurant</h6>
+              <p class="text-gray mb-1 small">• North • Hamburgers</p>
+              <p class="text-gray mb-1 rating"></p>
+              <ul class="rating-stars list-unstyled">
+                <li>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-inactive"></i>
+                </li>
+              </ul>
+              <p></p>
+              <div>
+                <span class="badge bg-danger">OFFER</span>
+                <small>65% OSAHAN50</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex p-3 align-items-center">
+          <div
+            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm"
+          >
+            <div class="list-card-image">
+              <div class="star position-absolute">
+                <span class="badge bg-success p-2">
+                  <i class="bi bi-star"></i> 3.1 (300+)
+                </span>
+              </div>
+              <div
+                class="favourite-heart text-danger position-absolute rounded-circle"
+              >
+                <span>
+                  <i class="bi bi-heart"></i>
+                </span>
+              </div>
+              <div class="promotion position-absolute">
+                <span class="badge bg-dark">Promoted</span>
+              </div>
+              <img
+                src="assets/Restaurant/Thai_Cusine.png"
+                width="100%"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body p-3 position-relative">
+              <h6 class="card-title">Thai Famous Indian Cuisine</h6>
+              <p class="text-gray mb-1 small">• Indian • Pure veg</p>
+              <p class="text-gray mb-1 rating"></p>
+              <ul class="rating-stars list-unstyled">
+                <li>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-inactive"></i>
+                </li>
+              </ul>
+              <p></p>
+              <div>
+                <span class="badge bg-success">OFFER</span>
+                <small>65% Off</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex p-3 align-items-center">
+          <div
+            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm"
+          >
+            <div class="list-card-image">
+              <div class="star position-absolute">
+                <span class="badge bg-success p-2">
+                  <i class="bi bi-star"></i> 3.1 (300+)
+                </span>
+              </div>
+              <div
+                class="favourite-heart text-danger position-absolute rounded-circle"
+              >
+                <span>
+                  <i class="bi bi-heart"></i>
+                </span>
+              </div>
+              <div class="promotion position-absolute">
+                <span class="badge bg-dark">Promoted</span>
+              </div>
+              <img
+                src="assets/Restaurant/trending1.png"
+                width="100%"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body p-3 position-relative">
+              <h6 class="card-title">Bite Me Sandwiches</h6>
+              <p class="text-gray mb-1 small">• American • Pure veg</p>
+              <p class="text-gray mb-1 rating"></p>
+              <ul class="rating-stars list-unstyled">
+                <li>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-inactive"></i>
+                </li>
+              </ul>
+              <p></p>
+              <div>
+                <span class="badge bg-success">OFFER</span>
+                <small>55% Off</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex p-3 align-items-center">
+          <div
+            class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm"
+          >
+            <div class="list-card-image">
+              <div class="star position-absolute">
+                <span class="badge bg-success p-2">
+                  <i class="bi bi-star"></i> 4.1 (400+)
+                </span>
+              </div>
+              <div
+                class="favourite-heart text-danger position-absolute rounded-circle"
+              >
+                <span>
+                  <i class="bi bi-heart"></i>
+                </span>
+              </div>
+              <div class="promotion position-absolute">
+                <span class="badge bg-dark">Promoted</span>
+              </div>
+              <img
+                src="assets/Restaurant/Osahan.png"
+                width="100%"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="card-body p-3 position-relative">
+              <h6 class="card-title">The osahan Restaurant</h6>
+              <p class="text-gray mb-1 small">• North • Hamburgers</p>
+              <p class="text-gray mb-1 rating"></p>
+              <ul class="rating-stars list-unstyled">
+                <li>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-active"></i>
+                  <i class="bi bi-star star-inactive"></i>
+                </li>
+              </ul>
+              <p></p>
+              <div>
+                <span class="badge bg-danger">OFFER</span>
+                <small>65% OSAHAN50</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-2 py-3 align-items-center">
+          <h5 class="m-0 title">Most Sales</h5>
+        </div>
+        <div class="col-10 d-flex align-items-center justify-content-end">
+          <span class="red-text">26 Places</span>
+          <i class="bi bi-chevron-double-right red-text"></i>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-4 mb-3">
+          <div
+            class="d-flex bg-white h-100 rounded overflow-hidden position-relative"
+          >
+            <div class="list-card-image">
+              <div class="promotion position-absolute">
+                <span class="badge bg-dark">Promoted</span>
+              </div>
+
+              <div class="star position-absolute">
+                <span class="badge bg-success p-2">
+                  <i class="bi bi-star"></i> 4.1 (400+)
+                </span>
+              </div>
+              <div
+                class="favourite-heart text-danger position-absolute rounded-circle"
+              >
+                <span>
+                  <i class="bi bi-heart"></i>
+                </span>
+              </div>
+
+              <img
+                src="assets/Restaurant/waffle-osahan.png"
+                alt="waffle-osahan"
+                class="image-mostsales"
+              />
+            </div>
+
+            <div class="p-3 position-relative">
+              <div>
+                <h6 class="mb-1 sale-title">The Osahan Restaurant</h6>
+                <p class="text-gray mb-3" style="font-size: 12px">
+                  North • Hamburgers • Pure veg
+                </p>
+                <p class="text-gray mb-3 time">
+                  <span class="bg-light text-dark rounded-sm py-1 px-2">
+                    <i class="bi bi-clock"></i> 15–25 min
+                  </span>
+                </p>
+              </div>
+              <div>
+                <span class="badge bg-danger" style="font-size: 10px"
+                  >OFFER</span
+                >
+                <small>65% OSAHAN50</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-3">
+          <div
+            class="d-flex bg-white h-100 rounded overflow-hidden position-relative"
+          >
+            <div class="list-card-image">
+              <div class="promotion position-absolute">
+                <span class="badge bg-dark">Promoted</span>
+              </div>
+
+              <div class="star position-absolute">
+                <span class="badge bg-success p-2">
+                  <i class="bi bi-star"></i> 4.1 (400+)
+                </span>
+              </div>
+              <div
+                class="favourite-heart text-danger position-absolute rounded-circle"
+              >
+                <span>
+                  <i class="bi bi-heart"></i>
+                </span>
+              </div>
+
+              <img
+                src="assets/Restaurant/waffle-osahan.png"
+                alt="waffle-osahan"
+                class="image-mostsales"
+              />
+            </div>
+
+            <div class="p-3 position-relative">
+              <div>
+                <h6 class="mb-1 sale-title">The Osahan Restaurant</h6>
+                <p class="text-gray mb-3" style="font-size: 12px">
+                  North • Hamburgers • Pure veg
+                </p>
+                <p class="text-gray mb-3 time">
+                  <span class="bg-light text-dark rounded-sm py-1 px-2">
+                    <i class="bi bi-clock"></i> 15–25 min
+                  </span>
+                </p>
+              </div>
+              <div>
+                <span class="badge bg-danger" style="font-size: 10px"
+                  >OFFER</span
+                >
+                <small>65% OSAHAN50</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 mb-3">
+          <div
+            class="d-flex bg-white h-100 rounded overflow-hidden position-relative"
+          >
+            <div class="list-card-image">
+              <div class="promotion position-absolute">
+                <span class="badge bg-dark">Promoted</span>
+              </div>
+
+              <div class="star position-absolute">
+                <span class="badge bg-success p-2">
+                  <i class="bi bi-star"></i> 4.1 (400+)
+                </span>
+              </div>
+              <div
+                class="favourite-heart text-danger position-absolute rounded-circle"
+              >
+                <span>
+                  <i class="bi bi-heart"></i>
+                </span>
+              </div>
+
+              <img
+                src="assets/Restaurant/waffle-osahan.png"
+                alt="waffle-osahan"
+                class="image-mostsales"
+              />
+            </div>
+
+            <div class="p-3 position-relative">
+              <div>
+                <h6 class="mb-1 sale-title">The Osahan Restaurant</h6>
+                <p class="text-gray mb-3" style="font-size: 12px">
+                  North • Hamburgers • Pure veg
+                </p>
+                <p class="text-gray mb-3 time">
+                  <span class="bg-light text-dark rounded-sm py-1 px-2">
+                    <i class="bi bi-clock"></i> 15–25 min
+                  </span>
+                </p>
+              </div>
+              <div>
+                <span class="badge bg-danger" style="font-size: 10px"
+                  >OFFER</span
+                >
+                <small>65% OSAHAN50</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section-footer bg-dark">
+      <div class="container">
+        <div class="footer-top py-3">
+          <div class="row">
+            <div class="col-12 d-flex">
+              <div class="col-4 px-2">
+                <div class="footer-about">
+                  <div>
+                    <img src="./assets/logo_web.png" height="40px" alt="logo" />
+                  </div>
+                  <div>
+                    <h6 class="title text-white">About Us</h6>
+                    <p class="about-text">
+                      Some short text about company like You might remember the
+                      Dell computer commercials in which a youth reports.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <i class="bi bi-facebook footer-icon px-2"></i>
+                      <i class="bi bi-instagram footer-icon px-2"></i>
+                      <i class="bi bi-youtube footer-icon px-2"></i>
+                      <i class="bi bi-twitter footer-icon px-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2 text-white">
+                <h6 class="title">Error Pages</h6>
+                <ul class="list-footer">
+                  <li>Not found</li>
+                  <li>Maintence</li>
+                  <li>Coming Soon</li>
+                </ul>
+              </div>
+              <div class="col-2 text-white">
+                <h6 class="title">Services</h6>
+                <ul class="list-footer">
+                  <li>Delivery Support</li>
+                  <li>Contact Us</li>
+                  <li>Terms of use</li>
+                  <li>Privacy policy</li>
+                </ul>
+              </div>
+              <div class="col-2 text-white">
+                <h6 class="title">For users</h6>
+                <ul class="list-footer">
+                  <li>User Login</li>
+                  <li>User register</li>
+                  <li>Forgot Password</li>
+                  <li>Account Setting</li>
+                </ul>
+              </div>
+              <div class="col-2 text-white">
+                <h6 class="title">More Pages</h6>
+                <ul class="list-footer">
+                  <li>Trending</li>
+                  <li>Most popular</li>
+                  <li>Restaurant Details</li>
+                  <li>Favorites</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h6 class="title text-white">Countries</h6>
+        <div class="row">
+          <div class="col-2 text-white">
+            <ul class="list-footer">
+              <li>India</li>
+              <li>Indonesia</li>
+              <li>Ireland</li>
+              <li>Italy</li>
+              <li>Lebanon</li>
+            </ul>
+          </div>
+          <div class="col-2 text-white">
+            <ul class="list-footer">
+              <li>Malaysia</li>
+              <li>New Zealand</li>
+              <li>Philippines</li>
+              <li>Poland</li>
+              <li>Portugal</li>
+            </ul>
+          </div>
+          <div class="col-2 text-white">
+            <ul class="list-footer">
+              <li>Australia</li>
+              <li>Brasil</li>
+              <li>Canada</li>
+              <li>Chile</li>
+              <li>Czech Republic</li>
+            </ul>
+          </div>
+          <div class="col-2 text-white">
+            <ul class="list-footer">
+              <li>Turkey</li>
+              <li>UAE</li>
+              <li>United Kingdom</li>
+              <li>United States</li>
+              <li>Sri Lanka</li>
+            </ul>
+          </div>
+          <div class="col-2 text-white">
+            <ul class="list-footer">
+              <li>Qatar</li>
+              <li>Singapore</li>
+              <li>Slovakia</li>
+              <li>South Africa</li>
+              <li>Green Land</li>
+            </ul>
+          </div>
+          <div class="col-2 text-white">
+            <ul class="list-footer">
+              <li>Pakistan</li>
+              <li>Bangladesh</li>
+              <li>Bhutaan</li>
+              <li>Nepal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-copyright py-3 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <p class="mb-0">© 2023 Company All rights reserved</p>
+          </div>
+          <div class="col-8">
+            <span class="mb-0 align-items-center d-flex justify-content-end">
+              <img class="footer-img" src="assets/appstore.png" />
+              <img class="footer-img" src="assets/playmarket.png" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

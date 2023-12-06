@@ -1,0 +1,185 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap Carousel with Dynamic Item Width</title>
+    <style>
+        /* Custom styles to display a single image with dynamic width */
+        .carousel-inner {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%; /* Default to full width */
+        }
+
+        .carousel-item img {
+            width: 100%; /* Ensure the image takes up the full width of the carousel item */
+            height: auto; /* Maintain the aspect ratio of the image */
+        }
+        .d-block{
+            display: inline !important;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            function setCarouselItemWidth() {
+                var windowWidth = $(window).width();
+                var itemWidthPercentage = 25; // Adjust this value as needed
+
+                if (windowWidth >= 768) {
+                    // Set the width of carousel items based on the screen width
+                    $('.carousel-item').css('flex', '0 0 ' + itemWidthPercentage + '%');
+                } else {
+                    // For smaller screens, default to full width
+                    $('.carousel-item').css('flex', '0 0 100%');
+                }
+            }
+
+            // Call the function on page load and window resize
+            setCarouselItemWidth();
+            $(window).resize(setCarouselItemWidth);
+        });
+    </script>
+</head>
+<body>
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assets/food-slider/Breakfast.png" class="d-block" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/food-slider/Burger.png" class="d-block" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/food-slider/Coffee.png" class="d-block" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/food-slider/ColaCan.png" class="d-block" alt="Image 4">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/food-slider/Fries.png" class="d-block" alt="Image 5">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/food-slider/Salad.png" class="d-block" alt="Image 6">
+        </div>
+        <!-- Add more carousel items as needed -->
+    <!-- </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<script>
+    let items = document.querySelectorAll('.carousel .carousel-item')
+
+items.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
+</script>
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Bootstrap Carousel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        #custom-carousel {
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            flex: 0 0 calc(100% / 8);
+            box-sizing: border-box;
+        }
+
+        .carousel-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="custom-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Dynamically generated carousel items go here -->
+        <!-- The first item is added again at the end to create a continuous loop -->
+        <div class="carousel-item active">
+            <img class="carousel-img" src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img class="carousel-img" src="image2.jpg" alt="Image 2">
+        </div>
+        <!-- Add more items as needed -->
+
+        <!-- The first item is added again at the end to create a continuous loop -->
+        <div class="carousel-item">
+            <img class="carousel-img" src="image1.jpg" alt="Image 1">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#custom-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#custom-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+    <script>
+        $(document).ready(function () {
+            var currentIndex = 0;
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % (document.querySelectorAll('#custom-carousel .carousel-inner .carousel-item').length / 2);
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + document.querySelectorAll('#custom-carousel .carousel-inner .carousel-item').length / 2) % (document.querySelectorAll('#custom-carousel .carousel-inner .carousel-item').length / 2);
+                updateCarousel();
+            }
+
+            function updateCarousel() {
+                const newTransformValue = -currentIndex * (100 / 8) + '%';
+                document.querySelector('#custom-carousel .carousel-inner').style.transform = 'translateX(' + newTransformValue + ')';
+            }
+        });
+    </script>
+
+</body>
+</html>
